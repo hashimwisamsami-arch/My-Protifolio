@@ -335,7 +335,8 @@ section {
 .project-card {
   display: flex;
   flex-direction: column;
-  width: 400px;
+  width: 100%;
+  max-width: 400px;
   height: 600px;
   align-items: center;
   justify-content: center;
@@ -500,5 +501,15 @@ section {
   }
   .contact form {
     flex-direction: column;
+  }
+}
+@media (max-width: 768px) {
+  .projects-box {
+    grid-template-columns: 1fr;
+  }
+
+  .project-card {
+    max-width: 100%;
+    height: auto;
   }
 }
