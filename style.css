@@ -335,6 +335,8 @@ section {
 .project-card {
   display: flex;
   flex-direction: column;
+  width: 400px;
+  height: 600px;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -357,9 +359,11 @@ section {
 }
 
 .project-card img {
+  width: 100%;
   max-width: 300px;
-  border-radius: 2rem;
+  height: 200px;
   object-fit: cover;
+  border-radius: 2rem;
 }
 
 .project-card h3 {
@@ -368,6 +372,10 @@ section {
 
 .project-card p {
   font-size: 1.6rem;
+}
+
+.project-card .btn a {
+  color: var(--second-bg-color);
 }
 
 /* contact & footer */
